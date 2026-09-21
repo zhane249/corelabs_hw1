@@ -37,9 +37,27 @@
     position: absolute;
     top: 0px;
     left: 0px;
+    z-index: 1;
 }
 .action-button:hover:after{
     background: rgba(130,0,0,0)
+}
+
+.action-button:hover .action-title{
+    display: none;
+}
+.action-title{
+    position: absolute;
+    top:40%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+
+    color: aqua;
+    font-size: 30px;
+    font-style: oblique;
+
 }
 /*first row*/
 #manhua1{
