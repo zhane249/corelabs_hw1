@@ -14,3 +14,5 @@ references for website 2: https://stackoverflow.com/questions/29969239/how-to-ma
 https://www.youtube.com/watch?v=z3iKpCNlWU8&t=116s 
 
 https://www.w3schools.com/css/css3_fonts.asp
+
+https://fonts.google.com/specimen/Asimovian?preview.text=True%20Education&specimen.preview.text=True+Education&categoryFilters=Feeling:%2FExpressive%2FFuturistic&preview.script=Latn
