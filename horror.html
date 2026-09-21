@@ -4,62 +4,103 @@
         My Favorite Horror/Thriller Manhua
     </title>
   <link href="style.css" rel="stylesheet"/>
+    <link href="horror.css" rel="stylesheet"/>
         
+    <script>
+        //refer to references in ReadME page
+
+        //reload
+window.addEventListener("load",() => {
+    let manhuas = document.querySelectorAll(".horror-page");
+//random slot list array (slot 1, 9, and 10 not shuffled in general due to special dimensions)
+    let slots =["slot2", "slot3", "slot4","slot5","slot6","slot7", "slot8",];
+
+
+for(let i =0; i<slots.length; ++i){
+
+    let random = randomNumber();
+    //current
+    let oldSlot = slots[i];
+
+    slots[i] = slots[random];
+    slots[random] = oldSlot;
+}
+//new slots manhua2-8
+for(let i = 1; i<8; ++i){
+    manhuas[i].classList.remove("slot"+ (i+1));
+    manhuas[i].classList.add(slots[i-1]);
+}
+//slots 1 and 9 special shuffle switch
+let switchImages = Math.floor(Math.random() *2);
+
+if (switchImages ==1){
+    manhuas[0].classList.remove("slot1");
+    manhuas[0].classList.add("slot9");
+    manhuas[8].classList.remove("slot9")
+    manhuas[8].classList.add("slot1");
+}
+});
+function randomNumber(){
+    return Math.floor(Math.random()*7);
+
+}
+        </script>
 </head>
 
 <body>
 <div class="horror-container">
     <img 
     id="manhua1" 
-    class="horror-page"
-    src="https://th.bing.com/th/id/OIP.okagLYAMnVb3iWf7x3Y3UgAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"/>
+    class="horror-page slot1"
+    src="https://swebtoon-phinf.pstatic.net/20251015_113/17604672718082ank9_JPEG/EpisodeList_Mobile.jpg?type=crop540_540"/>
 
      <img 
     id="manhua2" 
-    class="horror-page"
+    class="horror-page slot2"
     src="https://tse3.mm.bing.net/th/id/OIP.-xGIxU4gKuiirsUnPZ-angAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"/>
 
        <img 
     id="manhua3" 
-    class="horror-page"
+    class="horror-page slot3"
     src="https://tse3.mm.bing.net/th/id/OIP.AfMaORwLyQ-WhN7Ge21oBgHaJn?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"/>
 
          <img 
     id="manhua4" 
-    class="horror-page"
+    class="horror-page slot4"
     src="https://tse2.mm.bing.net/th/id/OIP.IIj0f6nXVit3DSJs_4kVBwHaIV?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"/>
 
         <img 
     id="manhua5" 
-    class="horror-page"
+    class="horror-page slot5"
     src="https://tse2.mm.bing.net/th/id/OIP.ddNVX8Wvgt3vdA3ClV34qQHaIV?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"/>
 
     
         <img 
     id="manhua6" 
-    class="horror-page"
+    class="horror-page slot6"
     src="https://tse1.mm.bing.net/th/id/OIP.Rg9HIl6OHpzuVxvoMDzOWgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"/>
 
        <img 
     id="manhua7" 
-    class="horror-page"
-    src="https://tse4.mm.bing.net/th/id/OIP.gmM4Obu4ua2UjCunJy_pzAHaJm?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"/>
+    class="horror-page slot7"
+    src="https://tse2.mm.bing.net/th/id/OIP.mpQyAmC-8uuj5PL9xGtLLgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm="/>
+
+
 
      <img 
     id="manhua8" 
-    class="horror-page"
+    class="horror-page slot8"
     src="https://tse4.mm.bing.net/th/id/OIP.gmM4Obu4ua2UjCunJy_pzAHaJm?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"/>
 
         <img 
     id="manhua9" 
-    class="horror-page"
-    src="https://tse2.mm.bing.net/th/id/OIP.mpQyAmC-8uuj5PL9xGtLLgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"/>
+    class="horror-page slot9"
+    src="https://images-cdn.reedsy.com/image/321212/a7b5660d072926db732526cf4f6d9bc8023e6194.jpg"/>
 
-    
         <img 
-    id="manhua9" 
-    class="horror-page"
-    src="https://m.media-amazon.com/images/I/91Yw0e7ep3L._SL1500_.jpg3"/>
+    id="manhua10" 
+    class="horror-page slot10"
+    src="https://m.media-amazon.com/images/I/91Yw0e7ep3L._SL1500_.jpg"/>
 
    
 </div>
