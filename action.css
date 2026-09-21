@@ -1,16 +1,16 @@
 
 .action-container{
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 280px);
+    grid-template-columns: repeat(3, 244px);
+    grid-template-rows: repeat(3, 274px);
     column-gap:20px;
     row-gap: 20px;
 }
 
 
 .action-page{
-    width: 200px;
-    height: 280px;
+    width: 180px;
+    height: 210px;
 /*grid covers to make same size*/
     object-fit: cover;
     border: 4px solid black
@@ -19,19 +19,27 @@
 .action-button{
     position: relative;
     width: 200px;
-    height: 280px;
+    height: 230px;
+    padding: 10px;
+    background-color:aqua;
+    border: 12px groove darkred;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .action-button:after{
     content: "";
     width: 100%;
     height: 100%;
-    background: darkred;
+    background: rgba(139,0,0,0.9);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
 }
 .action-button:hover:after{
-    background: rgba(130,0,0,0.1)
+    background: rgba(130,0,0,0)
 }
 /*first row*/
 #manhua1{
