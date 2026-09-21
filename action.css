@@ -1,0 +1,11 @@
+.action-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap:10px;
+}
+.action-page{
+    width: 200px;
+    height: 280px;
+/*grid covers to make same size*/
+    object-fit: cover;
+}
