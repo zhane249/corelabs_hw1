@@ -1,11 +1,59 @@
 .action-container{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    gap:10px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 280px);
 }
+
+
 .action-page{
     width: 200px;
     height: 280px;
 /*grid covers to make same size*/
     object-fit: cover;
+}
+
+/*first row*/
+#manhua1{
+    grid-column:1;
+    grid-row:1;
+}
+#manhua2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#manhua3{
+    grid-column:3;
+    grid-row: 1;
+}
+
+/*2nd row*/
+#manhua4{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#manhua5{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#manhua6{
+    grid-column: 3;
+    grid-row: 2;
+}
+/*3rd row*/
+#manhua7{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#manhua8{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#manhua9{
+    grid-column: 3;
+    grid-row: 3;
 }
