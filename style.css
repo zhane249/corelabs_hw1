@@ -34,6 +34,9 @@ h1{
     text-align: center;
 }
 
+p{
+line-height: 1.5;
+}
 .navigation{
     height: 70vh;
     display: flex;
