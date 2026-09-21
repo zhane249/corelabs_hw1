@@ -1,6 +1,29 @@
+.top-nav{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width:100%;
+   margin-bottom: 40px;
+}
+.top-nav a{
+    text-align: center;
+    padding: 15px 0;
+    background-color: lightcoral;
+    color:darkgoldenrod;
+    text-decoration-style: dotted;
+    font-size: 20px;
+}
+.top-nav a:hover{
+    background-color:brown;
+    color:azure;
+}
+
+
+
+
 body{
     margin: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkslateblue;
 }
 
 h1{
@@ -27,3 +50,4 @@ h1{
     background-color:blueviolet;
     color:blanchedalmond
 }
+
