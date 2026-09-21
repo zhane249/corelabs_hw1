@@ -1,0 +1,29 @@
+body{
+    margin: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.navigation{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+
+}
+.navigation a{
+    font-size: 40px;
+    padding: 30px 50px;
+    border: 2px solid yellowgreen;
+    text-decoration-line: underline;
+    color: black;
+}
+
+.navigation a:hover{
+    background-color:blueviolet;
+    color:blanchedalmond
+}
