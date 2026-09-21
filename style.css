@@ -41,13 +41,13 @@ h1{
 .navigation a{
     font-size: 40px;
     padding: 30px 50px;
-    border: 2px solid yellowgreen;
+    border: 10px solid yellowgreen;
     text-decoration-line: underline;
     color: black;
 }
 
 .navigation a:hover{
-    background-color:blueviolet;
-    color:blanchedalmond
+    background-color: lightcoral;
+    color:blanchedalmond;
 }
 
