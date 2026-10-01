@@ -12,6 +12,9 @@ css hover transparency overlay: https://stackoverflow.com/questions/21423422/col
 
 references for website 2: https://stackoverflow.com/questions/29969239/how-to-make-a-picture-change-randomly-in-a-website
 
+-showed me how to random select item from array with Math.floor(Math.random() * my 7 slots), reference explains math.random generates 0 to 1 and then gets a random number and rounds it to the nearest whole number with Math.floor.
+
+
 https://www.youtube.com/watch?v=z3iKpCNlWU8&t=116s 
 
 https://www.w3schools.com/css/css3_fonts.asp
