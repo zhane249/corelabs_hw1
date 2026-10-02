@@ -6,6 +6,8 @@ For this project, I've found new ways to piece together collages, and utilize th
 
 I've used the google font, utilized the w3schools massive collection of different css and html elements, and referenced youtube videos and forums to achieve the refreshing some slots while excluding others.
 
+The most trouble I ran into is just troubleshooting css formatting fighting the html images, and forgetting the proper syntax and confusion with the extra/missing closing tags especially when I have so many div elements, accidentally putting a div outside when it should be inside, etc. I overlooked my div-class calling it navigation and Prettier ran into so many errors because of it, though I found it funny that the website never showed any indicators that it was supposed to be nav class. 
+
 References and Links:
 
 css hover transparency overlay: https://stackoverflow.com/questions/21423422/color-transparency-overlay-on-hover
